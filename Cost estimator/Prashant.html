@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo"><i class="fas fa-car"></i> AutoCare</a>
+    <div class="nav-links">
+      <a href="#estimator">Fare Estimator</a>
+      <a href="#appointment">Test Drive</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container" id="estimator">
+    <h2>Car Fare Estimator</h2>
+    <div class="input-group">
+      <i class="fas fa-map-marker-alt"></i>
+      <input id="source" type="text" placeholder="Enter Source Location">
+    </div>
+    <div class="input-group">
+      <i class="fas fa-flag-checkered"></i>
+      <input id="destination" type="text" placeholder="Enter Destination">
+    </div>
+    <button onclick="calculateFare()">
+      <i class="fas fa-calculator"></i> Calculate Fare
+    </button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <div class="container" id="appointment">
+    <h2>Schedule Test Drive</h2>
+    <form id="appointmentForm">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" placeholder="Full Name" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-car"></i>
+        <select id="carModel" required>
+          <option value="">Select Car Model</option>
+          <option value="Model S">Model S</option>
+          <option value="Model E">Model E</option>
+          <option value="Model X">Model X</option>
+          <option value="Model Y">Model Y</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-calendar-alt"></i>
+        <input type="date" id="date" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-clock"></i>
+        <select id="time" required>
+          <option value="">Select Time Slot</option>
+          <option value="09:00-11:00">09:00 AM - 11:00 AM</option>
+          <option value="11:00-13:00">11:00 AM - 01:00 PM</option>
+          <option value="13:00-15:00">01:00 PM - 03:00 PM</option>
+          <option value="15:00-17:00">03:00 PM - 05:00 PM</option>
+        </select>
+      </div>
+      <button type="submit">
+        <i class="fas fa-calendar-check"></i> Book Appointment
+      </button>
+    </form>
+    <div id="appointmentResult" class="result"></div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 AutoCare. All rights reserved.</p>
+  </div>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxwA9roxQz2bn2tGaVDaZLeg_PawrfHbw&libraries=places&callback=initAutocomplete" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Commutation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .glass {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="relative text-white font-sans">
+
+  <!-- Background Video -->
+  <div class="h-screen relative">
+    <video autoplay muted loop class="video-bg">
+      <source src="2053100-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content Overlay -->
+    <div class="relative z-10 h-full flex flex-col">
+
+      <header class="glass flex justify-between items-center px-10 py-5 shadow-lg">
+        <h1 class="text-3xl font-bold tracking-wide text-white hover:text-yellow-300 transition duration-300">
+          SMART COMMUTATION
+        </h1>
+        <nav class="flex space-x-6 items-center">
+          <!-- <button><a href="login.html" class="text-lg hover:text-yellow-300 transition duration-300">Home</a></button> -->
+          <a href="#" class="text-lg hover:text-yellow-300 transition duration-300">Home</a>
+          <button><a href="login.html" class="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-300 transition duration-300">
+            Login
+          </a></button>
+          <!-- <a href="#" class="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-300 transition duration-300">
+            Login
+          </a> -->
+          <a href="#" class="border border-yellow-400 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 hover:text-black transition duration-300">
+            Sign In
+          </a>
+        </nav>
+      </header>
+
+      <!-- Welcome Text -->
+      <div class="flex-grow flex items-center justify-center bg-black bg-opacity-40">
+        <div class="text-center">
+          <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Welcome to Smart Travel</h2>
+          <p class="text-xl drop-shadow-md">Efficient. Intelligent. Fast.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-white text-black py-16 px-6 md:px-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">What is Smart Commutation?</h2>
+      <p class="text-lg leading-relaxed">
+        Smart Commutation is an intelligent travel system that helps you find the best path, estimate costs, check weather at your destination, and optimize your journey using real-time data. It’s the future of hassle-free travel.
+      </p>
+    </div>
+  </section>
+
+  <section id="features" class="bg-gray-100 text-black py-16 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="feature-card bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
+          <h3 class="text-xl font-bold mb-2">🚗 Best Route</h3>
+          <p>Find the shortest and fastest path between two places with smart mapping.</p>
+        </div>
+
+        <div class="feature-card bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
+          <h3 class="text-xl font-bold mb-2">🌤️ Weather</h3>
+          <p>Check live weather conditions at your selected destination before traveling.</p>
+        </div>
+
+        <div class="feature-card bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
+          <h3 class="text-xl font-bold mb-2">💰 Cost Estimator</h3>
+          <p>Get an estimated cost for your trip based on fuel price and distance.</p>
+        </div>
+
+        <div class="feature-card bg-gradient-to-br from-pink-100 to-pink-200 p-6 rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
+          <h3 class="text-xl font-bold mb-2">📢 Smart Alerts</h3>
+          <p>Receive real-time updates about traffic, roadblocks, or weather alerts.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="route" class="bg-gradient-to-r from-yellow-50 to-yellow-100 text-black py-20 px-6 md:px-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-4 text-gray-800 drop-shadow-lg">🚀 Try Our Route Finder</h2>
+      <p class="text-lg text-gray-700 mb-10">Find the best and fastest path for your journey with just a few clicks.</p>
+
+      <div class="bg-white p-6 rounded-2xl shadow-xl border border-yellow-300 transition hover:shadow-2xl">
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <div class="w-full relative">
+            <input
+              type="text"
+              placeholder="Enter Source"
+              class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+            />
+            <span class="absolute left-4 top-3 text-gray-400">📍</span>
+          </div>
+
+          <div class="w-full relative">
+            <input
+              type="text"
+              placeholder="Enter Destination"
+              class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+            />
+            <span class="absolute left-4 top-3 text-gray-400">🏁</span>
+          </div>
+        </div>
+
+        <button
+          id="route-button"
+          class="mt-6 bg-yellow-400 text-black font-semibold px-8 py-3 rounded-full shadow-md hover:bg-yellow-300 hover:scale-105 transform transition"
+        >
+          🔍 Find Best Route
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-white text-black py-16 px-6 md:px-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">💬 What Our Users Say</h2>
+
+      <div class="space-y-10">
+
+        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+          <p class="italic text-lg mb-4">“Smart Commutation saved me so much time during my daily commute. The best route finder I've ever used!”</p>
+          <p class="font-semibold text-gray-700">— Priya S., Student</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+          <p class="italic text-lg mb-4">“I love the cost estimator feature. It helps me plan trips without worrying about fuel prices.”</p>
+          <p class="font-semibold text-gray-700">— Rahul T., Working Professional</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+          <p class="italic text-lg mb-4">“The weather update is a game-changer! No more surprises while traveling.”</p>
+          <p class="font-semibold text-gray-700">— Ayesha K., Traveler</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-gray-900 text-white py-16 px-6 md:px-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to travel smarter?</h2>
+      <p class="mb-6 text-lg">Join the Smart Commutation revolution and enjoy hassle-free, intelligent travel planning today!</p>
+      <a href="#" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>&copy; 2025 Smart Commutation. All rights reserved.</p>
+  </footer>
+
+  <!-- Login Alert Script -->
+  <script>
+    function showLoginAlert() {
+      alert("Please login to use this feature.");
+    }
+
+    // Add click event to all feature cards
+    const featureCards = document.querySelectorAll(".feature-card");
+    featureCards.forEach(card => {
+      card.addEventListener("click", showLoginAlert);
+    });
+
+    // Add click event to route finder button
+    const routeButton = document.getElementById("route-button");
+    routeButton.addEventListener("click", showLoginAlert);
+  </script>
+
+</body>
+</html>
