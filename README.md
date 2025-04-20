@@ -33,6 +33,12 @@ The **Smart Commutation Device** is an intelligent transportation system designe
 
 📸 Screenshots
 ![Screenshot 2025-04-20 193809](https://github.com/user-attachments/assets/f17b2108-7d33-4a5a-9ed3-dfd304765109)
+![Screenshot 2025-04-20 193819](https://github.com/user-attachments/assets/ed67cdef-56c1-4ed7-ada6-a700599bd8f9)
+![Screenshot 2025-04-20 193836](https://github.com/user-attachments/assets/f9ac6227-951a-47b7-84bb-712d88e84718)
+![Screenshot 2025-04-20 193844](https://github.com/user-attachments/assets/b031fbf2-bb4c-432b-8212-86430f8621d8)
+
+
+
 
 
 ## 📂 Project Structure
