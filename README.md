@@ -28,6 +28,43 @@ The **Smart Commutation Device** is an intelligent transportation system designe
 - **Hosting**: GitHub Pages / Localhost (XAMPP)
 
 ---
+📽️ Demo
+
+
+📸 Screenshots
+
+
 
 ## 📂 Project Structure
+Smart-Commutation-Device/ ├── index.html ├── styles/ │ └── style.css ├── scripts/ │ └── main.js ├── backend/ │ └── db.php ├── assets/ │ └── images/ ├── README.md
 
+---
+
+## 🚀 How to Run
+
+1. Clone the repository  
+   `git clone https://github.com/Avivarshney8/Smart-Commutation-Device.git`
+
+2. Open `index.html` in your browser or host using XAMPP for PHP functionalities.
+
+3. Add your **TomTom API Key** in the JS config file.
+
+---
+
+## 🌐 Demo
+
+_A live demo link will be added soon._
+
+---
+
+## 📧 Contact
+
+For any queries or contributions, reach out at:  
+**Email:** avivarshney8@example.com  
+**GitHub:** [@Avivarshney8](https://github.com/Avivarshney8)
+
+---
+
+## 📃 License
+
+This project is open-source and available under the [MIT License](LICENSE).
