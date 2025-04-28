@@ -57,12 +57,6 @@ Smart-Commutation-Device/ ├── index.html ├── styles/ │ └── s
 
 ---
 
-## 🌐 Demo
-
-_A live demo link will be added soon._
-
----
-
 ## 📧 Contact
 
 For any queries or contributions, reach out at:  
