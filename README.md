@@ -29,7 +29,7 @@ The **Smart Commutation Device** is an intelligent transportation system designe
 
 ---
 📽️ Demo
-https://tinyurl.com/Avi-varshney
+https://www.linkedin.com/posts/avi-varshney-0b61152a3_webdevelopment-html-css-activity-7319734243629117440-b2W6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEkqb0oBRv0U7rlcM0Hr8LbRQRPGNs121p0
 
 📸 Screenshots
 ![Screenshot 2025-04-20 193809](https://github.com/user-attachments/assets/f17b2108-7d33-4a5a-9ed3-dfd304765109)
